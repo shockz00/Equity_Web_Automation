@@ -1,17 +1,23 @@
-{
-
-    "chromeWebSecurity": false,
+{  "chromeWebSecurity": false,
     "$schema": "https://on.cypress.io/cypress.schema.json",
-    "animationDistanceThreshold": 5,
+    "animationDistanceThreshold": 50,
     "watchForFilesChanges": false,
     "viewportWidth": 1980,
-     "viewportHeight": 1080,
-     "waitForAnimation": true,
+    "viewportHeight": 1080,
+    "waitForAnimation": true,
     "animationDistanceTreshold": 20,
     "defaultCommandTimeout": 6000,
+    "waitForAnimations": false,
     "execTimeout": 60000,
     "pageLoadTimeout": 60000,
     "responseTimeout": 15000,
     "video": true,
-    "failOnStatusCode": false
-}
+    "failOnStatusCode": false,
+    "reporter": "cypress-mochawesome-reporter",
+  
+    "reporterOptions": {
+      "reportDir": "cypress/report",
+      "charts": true,
+      "reportPageTitle": "Equity Web Automation Kenya",
+      "embeddedScreenshots": true
+    }}
